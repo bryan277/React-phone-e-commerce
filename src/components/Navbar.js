@@ -15,12 +15,13 @@ export default class Navbar extends Component {
                     className="navbar-brand" />
                 </Link>
                 <ul className="navbar-nav align-items-center">
-                    <li className="nav-item ml-5">
+                    <li className="nav-item ml-3">
                         <Link to="/" className="nav-link">
                         products
                         </Link>
                     </li>
                 </ul>
+   
                 <Link to='/cart' className="ml-auto">
                     <button> 
                         <i className="fas fa-shopping-cart" />
