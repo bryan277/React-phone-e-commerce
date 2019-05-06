@@ -23,11 +23,13 @@ body {
   text-transform: uppercase;
 }
 
-.text-blue {
-  color: var(--mainBlue);
+.text-green {
+  color: var(--darkGreen);
 }
 
 .text-bright {
   color: var(--lightBlue);
 }
+
+
 
