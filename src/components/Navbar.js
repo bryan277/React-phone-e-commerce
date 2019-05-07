@@ -1,41 +1,42 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
-import logo from '../logo.svg';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-
-
+import logo from '../logo.svg';
 
 export default class Navbar extends Component {
-    render() {
-        return (
-            <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
-            {/* 
+  render() {
+    return (
+          <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
+              {/*
                 https://www.iconfinder.com/icons/1243689/call_phone_icon
                 Creative Commons (Attribution 3.0 Unported);
                 https://www.iconfinder.com/Makoto_msk */}
-                <Link to='/'>
-                    <img src={logo} alt="store"
-                    className="navbar-brand" />
+              <Link to="/">
+                  <img
+src={logo}
+alt="store"
+                      className="navbar-brand"
+                    />
                 </Link>
-                <ul className="navbar-nav align-items-center">
-                    <li className="nav-item ml-3">
-                        <Link to="/" className="nav-link">
+              <ul className="navbar-nav align-items-center">
+                  <li className="nav-item ml-3">
+                      <Link to="/" className="nav-link">
                         products
                         </Link>
                     </li>
                 </ul>
-                
-                <Link to='/cart' className="ml-auto">
-                    <ButtonContainer> 
-                        <span className="mr-2">
-                        <i className="fas fa-cart-plus" />
+
+              <Link to="/cart" className="ml-auto">
+                  <ButtonContainer>
+                      <span className="mr-2">
+                          <i className="fas fa-cart-plus" />
                         </span>
                         my cart
                     </ButtonContainer>
                 </Link>
             </NavWrapper>
-        )
-    }
+    );
+  }
 }
 
 
@@ -64,4 +65,3 @@ transition: all 0.5s ease-in-out;
     color: var(--mainBlue);
 }
 `;
-
