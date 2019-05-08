@@ -7,9 +7,11 @@ import { ProductProvider } from './context';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <Router>
-    <App />
-  </Router>,
+  <ProductProvider>
+    <Router>
+      <App />
+    </Router>
+  </ProductProvider>,
   document.getElementById('root'),
 );
 

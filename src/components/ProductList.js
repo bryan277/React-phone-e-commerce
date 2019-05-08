@@ -19,8 +19,8 @@ export default class ProductList extends Component {
               
               <div className="row">
                 <ProductConsumer>
-                  {value1 => {
-                    return <h1>{value1}</h1>;
+                  {hello => {
+                    return <h1>{hello}</h1>;
                   }}
                 </ProductConsumer>
               </div>
